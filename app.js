@@ -1,5 +1,5 @@
 // ADDITION
-const sumInput1 = document.getElementById('sum-input-1');
+/*const sumInput1 = document.getElementById('sum-input-1');
 const sumInput2 = document.getElementById('sum-input-2');
 const sumButton = document.getElementById('sum-button');
 const sumSpan = document.getElementById('sum-span');
@@ -49,4 +49,23 @@ divButton.addEventListener ('click', () => {
    const value2 = divInput2.valueAsNumber;
    const div = value1 / value2;
   divSpan.textContent = div;
-}); 
+}); */
+ //THE REFACTORED VERSION Below
+
+ // this is where...
+//  Handlers are imported
+import { handleSumClick, handleDifClick, handleMultClick, handleDivClick } from './handlers.js';
+
+const sumButton = document.getElementById('sum-button');
+sumButton.addEventListener('click', handleSumClick);
+
+const difButton = document.getElementById('dif-button');
+difButton.addEventListener('click', handleDifClick);
+
+const multButton = document.getElementById('mult-button');
+multButton.addEventListener('click', handleMultClick);
+
+const divButton = document.getElementById('div-button');
+divButton.addEventListener('click', handleDivClick);
+
+//  and these handlers are added to the buttons (the add EventListeners)
