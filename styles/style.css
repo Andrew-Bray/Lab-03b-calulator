@@ -21,6 +21,17 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
+button {
+    color: rebeccapurple;
+    background: chartreuse;
+    transition: all 1.6s ease-in-out;
+}
+
+button:hover { transform: rotate3d(1, 1, -1, 3turn);
+    background: peachpuff
+    ;
+
+}
 
 main {
     display: flex;
@@ -35,7 +46,7 @@ section {
     width: 1000px;
     max-width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: var(--gutter);
     padding-bottom: var(--gutter);
@@ -43,7 +54,9 @@ section {
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
 }
-
+span {
+    background: blanchedalmond ;
+}
 header {
     display: flex;
     justify-content: flex-end;
